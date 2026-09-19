@@ -1,0 +1,25 @@
+body {
+            background-color: #5d576b;
+            color: #f1dede;
+            font-family: Arial;
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            background-color: #d496a7;
+            color: #5d576b;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 0px;
+            border-radius: 1rem;
+        }
+        #fact-box {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #d496a7;
+            color: #5d576b;
+            border-radius: 1rem;
+            min-height: 50px;
+        }

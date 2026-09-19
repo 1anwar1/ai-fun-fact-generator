@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+     <title>Fun Fact Generator</title>
+</head>
+<body>
+
+    <h1>CHOOSE A TOPIC</h1>
+
+    <button onclick="getFact('nature')" >Nature</button>
+    <button onclick="getFact('tech')" >Tech</button>
+    <button onclick="getFact('science')" >Science</button>
+    <button onclick="getFact('food')" >Food</button>
+    <button onclick="getFact('business')">Business</button>
+
+    <div id="fact-box">Click a button to get a fun fact</div>
+
+    <script>
+        async function getFact(topic) {
+            document.getElementById('fact-box').innerText = 'Loading...';
+            
+            const response = await fetch('/generate-fact', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({topic: topic})
+            });
+            
+            const data = await response.json();
+            
+            document.getElementById('fact-box').innerText = data.fact;}
+    </script>
+
+</body>
+</html>
