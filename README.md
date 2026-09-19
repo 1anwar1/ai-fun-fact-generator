@@ -18,7 +18,7 @@ Click on a topic, wait for a few seconds, get a short fun fact from ai.
 
 
 ## What i learnt :
--What is API and how to use it
--The importance of protecting API keys, and how to protect them using .env and venv
--How to deploy a python web app to PythonAnywhere
--Reading, Understanding, and fixing error messages
+- What is API and how to use it
+- The importance of protecting API keys, and how to protect them using .env and venv
+- How to deploy a python web app to PythonAnywhere
+- Reading, Understanding, and fixing error messages
